@@ -93,9 +93,20 @@ body.light__theme .showTodo__control-button.active {
   height: auto;
   margin: 0 auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .container {
-    width: 40%;
+    width: 50%;
+  }
+}
+@media (max-width: 899px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
   }
 }
 
@@ -107,6 +118,11 @@ body.light__theme .showTodo__control-button.active {
 }
 .text.completed__text {
   text-decoration: line-through;
+}
+@media (max-width: 600px) {
+  .text {
+    font-size: 1.6rem;
+  }
 }
 
 .circle {
@@ -238,6 +254,11 @@ body.light__theme .showTodo__control-button.active {
 .showTodo__control-button.active {
   color: #64d9f7;
   opacity: 1;
+}
+@media (max-width: 600px) {
+  .showTodo__control-button {
+    font-size: 1rem;
+  }
 }
 .showTodo__empty {
   font-size: 3.5rem;

@@ -91,7 +91,15 @@ body {
   height: auto;
   margin: 0 auto;
   @include respond-to("desktop") {
-    width: 40%;
+    width: 50%;
+  }
+  @include respond-to("tablet") {
+    width: 70%;
+  }
+  @include respond-to("mobile") {
+    width: 100%;
+    padding: 0 2rem;
+    // margin: 0 2rem;
   }
 }
 .text {
@@ -102,8 +110,10 @@ body {
   &.completed__text {
     text-decoration: line-through;
   }
+  @include respond-to("mobile") {
+    font-size: 1.6rem;
+  }
 }
-// Variables (from your SCSS variables file)
 
 .circle {
   border-radius: 50%;
@@ -228,6 +238,9 @@ body {
       &.active {
         color: $blue;
         opacity: 1;
+      }
+      @include respond-to("mobile") {
+        font-size: 1rem;
       }
     }
   }
