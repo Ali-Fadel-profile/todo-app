@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Josefin+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/logo.png" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <header class="container header">
+      <h1 class="header__logo">TODO</h1>
+      <button class="header__button"></button>
+    </header>
+    <main class="container">
+      <section class="addTodo">
+        <button class="circle addTodo__button"></button>
+        <input
+          type="text"
+          class="addTodo__input text"
+          placeholder="Create a new todo..."
+        />
+      </section>
+      <section class="showTodo">
+        <ul class="showTodo__list"></ul>
+        <div class="showTodo__control">
+          <p class="showTodo__control-total text"></p>
+          <div class="showTodo__control-buttons">
+            <button
+              class="showTodo__control-button text active"
+              data-type="all"
+            >
+              All
+            </button>
+            <button class="showTodo__control-button text" data-type="active">
+              Active
+            </button>
+            <button class="showTodo__control-button text" data-type="completed">
+              Completed
+            </button>
+          </div>
+          <button
+            class="showTodo__control-button text"
+            id="Clear__completed-btn"
+          >
+            Clear Completed
+          </button>
+        </div>
+      </section>
+      <h2 class="showTodo__empty">Add your first todo</h2>
+      <p class="text label">drag and drop to reorder the list</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

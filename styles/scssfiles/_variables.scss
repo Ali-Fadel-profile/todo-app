@@ -1,0 +1,25 @@
+// Dark mode
+$dark-blue: #222838;
+$gray-blue: #cccccc;
+$white: #fff;
+$desaturated-blue: #2c303a;
+$hover-gray-blue: #41444d;
+$grayish-blue: #6e7e91;
+$blue: #64d9f7;
+
+// Light mode
+$light-gray: #fafafa;
+$light-gray-blue: #e4e5f1;
+$light-gray-blue: #d2d3db8c;
+$dark-gray-blue: #9394a5;
+$dark-gray-blue-light: #484b6a;
+$transition-timing: 0.5s;
+
+$circle-background: linear-gradient(to bottom right, $blue, $grayish-blue);
+$hover-border: mix($blue, $grayish-blue, 50%);
+
+// Dark theme shadows
+$dark-shadow: 0rem 3rem 3rem rgba(0, 0, 0, 0.5);
+
+// Light theme shadows
+$light-shadow: 0rem 3rem 3rem rgba(0, 0, 0, 0.1);
