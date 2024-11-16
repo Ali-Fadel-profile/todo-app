@@ -270,9 +270,10 @@ body {
   }
 }
 .label {
-  text-align: center;
-  margin-top: 5rem;
-  @include respond-to("mobile") {
-    margin-top: 13rem;
+  opacity: 0;
+  @include respond-to("desktop") {
+    opacity: 1;
+    text-align: center;
+    margin-top: 5rem;
   }
 }

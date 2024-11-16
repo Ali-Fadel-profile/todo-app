@@ -289,11 +289,12 @@ body.light__theme .showTodo__control-button.active {
 }
 
 .label {
-  text-align: center;
-  margin-top: 5rem;
+  opacity: 0;
 }
-@media (max-width: 600px) {
+@media (min-width: 900px) {
   .label {
-    margin-top: 13rem;
+    opacity: 1;
+    text-align: center;
+    margin-top: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
