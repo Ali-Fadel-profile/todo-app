@@ -233,11 +233,10 @@ body {
       gap: 1rem;
       @include respond-to("mobile") {
         background-color: $desaturated-blue;
-        // box-shadow: $dark-shadow;
         position: absolute;
         bottom: calc(-100% + -2rem);
-        border-radius: 0.5rem;
         left: 0;
+        border-radius: 0.5rem;
         width: 100%;
         padding: 2rem;
         display: flex;
