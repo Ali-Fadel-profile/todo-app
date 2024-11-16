@@ -2,8 +2,8 @@
 
 ## Preview
 
-[![To-Do Application Screenshot](./design/mobile-design-light.jpg)]([https://your-live-app-link.com](https://ali-fadel-profile.github.io/todo-app/)) [![To-Do Application Screenshot](./design/mobile-design-dark.jpg)]([https://your-live-app-link.com](https://ali-fadel-profile.github.io/todo-app/))   
-
+[![To-Do Application Screenshot](./design/mobile-design-light.jpg)](https://ali-fadel-profile.github.io/todo-app)
+[![To-Do Application Screenshot](./design/mobile-design-dark.jpg)](https://ali-fadel-profile.github.io/todo-app)
 ---
 
 ## Introduction
