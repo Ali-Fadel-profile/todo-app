@@ -132,6 +132,9 @@ body.light__theme .showTodo__control-button.active {
   height: 2rem;
   transition: border-color 0.5s ease;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .circle:hover {
   border-color: #69acc4;
@@ -153,6 +156,10 @@ body.light__theme .showTodo__control-button.active {
   background-repeat: no-repeat;
   background-position: center;
   background-color: linear-gradient(to bottom right, #64d9f7, #6e7e91);
+}
+
+.addTodo__button {
+  font-size: 2rem;
 }
 
 .header {
@@ -222,11 +229,6 @@ body.light__theme .showTodo__control-button.active {
   background-repeat: no-repeat;
   height: 2rem;
   width: 2rem;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.showTodo__item-task:hover button {
-  opacity: 1;
   cursor: pointer;
 }
 .showTodo__control {
@@ -237,6 +239,11 @@ body.light__theme .showTodo__control-button.active {
 }
 .showTodo__control-total {
   opacity: 50%;
+}
+@media (max-width: 600px) {
+  .showTodo__control-total {
+    font-size: 1.1rem;
+  }
 }
 .showTodo__control-buttons {
   display: flex;
@@ -257,7 +264,7 @@ body.light__theme .showTodo__control-button.active {
 }
 @media (max-width: 600px) {
   .showTodo__control-button {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .showTodo__empty {

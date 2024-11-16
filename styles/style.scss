@@ -122,6 +122,9 @@ body {
   height: 2rem;
   transition: border-color $transition-timing ease;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     border-color: $hover-border;
   }
@@ -143,6 +146,9 @@ body {
     background-position: center;
     background-color: linear-gradient(to bottom right, $blue, $grayish-blue);
   }
+}
+.addTodo__button {
+  font-size: 2rem;
 }
 .header {
   display: flex;
@@ -206,11 +212,6 @@ body {
         background-repeat: no-repeat;
         height: 2rem;
         width: 2rem;
-        opacity: 0;
-        transition: opacity $transition-timing ease;
-      }
-      &:hover button {
-        opacity: 1;
         cursor: pointer;
       }
     }
@@ -222,6 +223,9 @@ body {
     padding: 2rem;
     &-total {
       opacity: 50%;
+      @include respond-to("mobile") {
+        font-size: 1.1rem;
+      }
     }
     &-buttons {
       display: flex;
@@ -240,7 +244,7 @@ body {
         opacity: 1;
       }
       @include respond-to("mobile") {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
   }
