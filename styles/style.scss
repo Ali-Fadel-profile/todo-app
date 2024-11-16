@@ -67,7 +67,10 @@ body {
   &.light__theme .showTodo {
     box-shadow: $light-shadow;
     &__control-buttons {
-      box-shadow: $light-shadow;
+      box-shadow: none;
+      @include respond-to("mobile") {
+        box-shadow: $light-shadow;
+      }
     }
     &__empty {
       color: $dark-gray-blue-light;
@@ -233,6 +236,7 @@ body {
       gap: 1rem;
       @include respond-to("mobile") {
         background-color: $desaturated-blue;
+        box-shadow: $dark-shadow;
         position: absolute;
         bottom: calc(-100% + -2rem);
         left: 0;
