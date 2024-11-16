@@ -60,11 +60,15 @@ body {
     background-image: url(../images/icon-moon.svg);
   }
   &.light__theme .addTodo,
-  &.light__theme .showTodo {
+  &.light__theme .showTodo,
+  &.light__theme .showTodo__control-buttons {
     background-color: $white;
   }
   &.light__theme .showTodo {
     box-shadow: $light-shadow;
+    &__control-buttons {
+      box-shadow: $light-shadow;
+    }
     &__empty {
       color: $dark-gray-blue-light;
     }
@@ -99,7 +103,6 @@ body {
   @include respond-to("mobile") {
     width: 100%;
     padding: 0 2rem;
-    // margin: 0 2rem;
   }
 }
 .text {
@@ -221,15 +224,26 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    position: relative;
     &-total {
       opacity: 50%;
-      @include respond-to("mobile") {
-        font-size: 1.1rem;
-      }
     }
     &-buttons {
       display: flex;
       gap: 1rem;
+      @include respond-to("mobile") {
+        background-color: $desaturated-blue;
+        // box-shadow: $dark-shadow;
+        position: absolute;
+        bottom: calc(-100% + -2rem);
+        border-radius: 0.5rem;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
     }
     &-button {
       opacity: 50%;
@@ -243,9 +257,6 @@ body {
         color: $blue;
         opacity: 1;
       }
-      @include respond-to("mobile") {
-        font-size: 1.1rem;
-      }
     }
   }
   &__empty {
@@ -258,4 +269,7 @@ body {
 .label {
   text-align: center;
   margin-top: 5rem;
+  @include respond-to("mobile") {
+    margin-top: 13rem;
+  }
 }
